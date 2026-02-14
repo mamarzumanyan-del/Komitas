@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Special Memory</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  position: relative;
+  z-index: 2;
+  padding: 20px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.8);
+  cursor: pointer;
+}
+
+button:hover {
+  background: white;
+}
+</style>
+</head>
+
+<body>
+
+<img src="ae78aa4c-5ea8-44af-8d19-77d37c0a3752.jpg">
+
+<button onclick="playMusic()">▶ Play</button>
+
+<audio id="audio">
+  <source src="Marzhan Mxitaryan - Shushiki (Vagharshapat Marz).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playMusic() {
+  document.getElementById("audio").play();
+}
+</script>
+
+</body>
+</html>
